@@ -20,6 +20,7 @@ xt=scaler.fit_transform(xt)
 
 x_train,x_test,y_train,y_test = train_test_split(xt, yt, test_size=0.2, random_state=42)
 
+# reshape 2000, -1
 x_train = x_train.reshape(2000, 16)
 x_test = x_test.reshape(2000, 4)
 x_train = x_train/255.0
